@@ -1,0 +1,18 @@
+1)add number from 15 to 25
+2)Enter 10 numbers count number of even numbers and odd numbers and sum of even and odd number
+3)input 5 numbers check its completerly divisible by 5 add those numbers
+ex = input 1 = 5 ,input 1 = 10,input 1 = 3,input 1 = 25,input1 = 22
+sum = 40
+4)input 5 subjects marks find total,average marks, if marks greater than 35 pass less than 35 fail count how many subjects are passes and how many are failed
+5)input 5 numbers, if entered number is in the range of 25 to 75 then add those numbers else count the numbers which are not in range of 25 to 75
+input =5,6,88,25,35
+sum = 60 (25+35)
+count = 3 (5,6,88)
+6)Count how many Vowels and consonants in a string
+7)Convert Upper to lower lower to upper case in a string if it is a number or spl character print as it is
+8)Based on the user input display the multiplication table
+9)write a program to Reverse a string
+10)Count the number of digits in a given integer
+
+
+

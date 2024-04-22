@@ -1,0 +1,27 @@
+A1)Check the given string is symmeterical or not
+2)Uppercase Half String
+input = 'python' 
+output = 'pytHON'
+input = 'check'  output =chECK
+3)create a new string by Removing 3rd and 5th index string  
+4)write a program to display maximum time repeated character in a string
+5)Python program to capitalize the first and last character of each word in a string
+6)Python program to check if a string has atleast one alphabet and number
+7)Python | Count the Number of matching characters in a pair of string
+str1 = 'aabcddekll12@' I/P
+str2 = 'bb22ll@55k'    I/P
+output =
+b 2
+k 1
+l 2
+l 2
+2 2
+@ 1
+8)Find words which are greater than given length k
+sentence = 'Hi hello welcome to python programming launguage and it is very easy to learn"
+9)write a program to display char before user input
+ex: if you take 'D' as input
+o/p : ABC
+ex: if you take 'e' as input
+o/p : abcd
+other than alphabet display charater not belong to alphabet

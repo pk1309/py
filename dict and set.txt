@@ -1,0 +1,133 @@
+
+------------------------------------------------
+#1)Find Highest and lowest number in given list
+'''
+L= [4,3,8,9,2]
+Highest_NUMBER=L[0]
+lowest_NUMBER=L[0]
+for num in range(len(L)):
+  if L[num]>Highest_NUMBER:
+    Highest_NUMBER=L[num]
+  elif L[num]<lowest_NUMBER:
+    lowest_NUMBER=L[num]
+print("Highest number in given list",Highest_NUMBER)
+print("lowest number in given list",lowest_NUMBER)
+'''
+#2)Display the elements of type string reverse it else print as it is in the tuple
+'''
+tup=("manga","123",0.2,96)
+for string in tup:
+  if isinstance(string,str):
+    print(string[::-1])
+  else :
+    print(string)
+    '''
+#3)li = ['tiger.animal',lion.animal,sunflower.flower,cat.animal,rose.flower,jasmin.flower] create separate animals and flowers list
+'''
+li = ['tiger.animal','lion.animal','sunflower.flower','cat.animal','rose.flower','jasmin.flower'] 
+d={}
+animal=[]
+flower=[]
+for i in li:
+  key,value=i.split(".")
+  d[key]=value
+for key,value in d.items():
+  if value=='animal':
+    animal.append(key)
+  else:
+    flower.append(key)
+print(animal)
+print(flower)
+'''
+#4)l1= [1,2,3,4,5],l2 = [4,3,8,9,2] How many elements are common b/w to list
+'''
+l1= [1,2,3,4,5]
+l2 = [4,3,8,9,2]
+count=0
+for i in l1:
+  if i in l2:
+    count+=1
+print(count)
+'''
+#5)Based on user input print multiplication table
+'''
+number= 5#int(input("enter multiplication number: "))
+for i in range(1,11):
+  res=number*i
+  print(f'{number} * {i} = {res}')
+'''
+
+
+#6)fruits = ("apple","mango","orange","apple","grapes") remove duplicates from tuple
+'''
+fruits = ("apple","mango","orange","apple","grapes")
+l=[]
+for i in fruits:
+  if i not in l:
+    l.append(i)
+print(tuple(l))
+'''
+
+######################################################
+#1)create a dictionary with separate animal and flow li = ['elephant.animal','lion.animal','jasmin.flower','cat.animal','rose.flowe','lotus.flower']
+'''
+li = ['elephant.animal','lion.animal','jasmin.flower','cat.animal','rose.flowe','lotus.flower']
+d={}
+for i in li:
+  key,value=i.split(".")
+  d[key]=value
+print(d)
+'''
+#2)group even and odd numbers
+'''
+input_list = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+d = {'0': [], '1': []}
+
+for num in input_list:
+    if num % 2 == 0:
+        d['0'].append(num)
+    else:
+        d['1'].append(num)
+print(d)
+'''
+#3)Create city and population pair
+'''
+city = ['Bangalore','Mysore','Delhi']
+population = [12345678,54368972,1245879]
+d={ }
+for i in range(len(city)):
+  for j in range(len(population)):
+    d[city[i]]=population[j]
+print(d)
+ '''
+#4)Create a dictionary with repeated charcter with count pair
+st = 'hello world'
+d={}
+for i in st:
+  if st.count(i)>1:
+    d[i]=st.count(i)
+print(d)
+
+#5)Update set1 by adding items from set2, except common items
+'''
+set1 = {10, 20, 30, 40, 50}
+set2 = {30, 40, 50, 60, 70}
+print(set1.symmetric_difference(set2))
+'''
+6
+#convert only the names into upper case, non alphabets - should be ignored
+#the output should be 
+#  GANESH
+#  CHARLES
+# SDSDA442RTRT
+s1 = {'GAnesh', 'ChaRLes', '123666', '67.22', 'SDSDA442rtrt'}
+for i in s1:
+  for j in i:
+    if int(ord(j))>=65 and int(ord(j))<=90:
+      print(j,end="")
+    elif int(ord(j))>=97 and int(ord(j))<=122:
+      print(chr(int(ord(j))-32),end="")
+    else:
+      print(j,end="")
+
+ 
